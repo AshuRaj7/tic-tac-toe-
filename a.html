@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="tictac.css"/>
+           
+            <script src="tictac.js">
+            </script>
+            <style
+            >@media (max-width: 768px) {
+                .center {
+                    padding: 0 10px;
+                }
+            
+                .lab {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            
+                .player1,
+                .player2 {
+                    text-align: center;
+                    margin: 5px 0;
+                }
+            
+                #dv {
+                    margin-top: 20px;
+                }
+            
+                table {
+                    height: 120px;
+                    width: 120px;
+                }
+            
+                input {
+                    height: 70px;
+                    width: 70px;
+                    font-size: 30px;
+                }
+            
+                form {
+                    margin-top: 10px;
+                    max-width: 340px;
+                    max-height: 600px;
+                    padding: 5px;
+                }
+            
+                #para {
+                    font-size: 24px;
+                }
+            }
+
+.lab{              
+    display: flex;
+    justify-content: space-between;
+    height: 5px;
+}
+.player1{
+    text-align: left;
+    margin-left: 2px;
+    color: blue;
+}
+.player2{
+    text-align: right;
+    margin-right: 4px;
+    color: red;
+}
+
+#dv{
+    height: 270px;
+    margin-top: 70px;
+}   
+b{
+    font-size: 20px;
+    
+}
+table{
+    border-color:black;
+    border: 10px;
+    height: 150px;
+    width: 150px;
+}
+input{
+    height: 90px;
+    width: 90px;
+    font-size: 40px;
+    border-color:skyblue;
+    background-color:aliceblue;
+}
+input:hover{
+
+    background-color: whitesmoke;
+    border-color: gainsboro;
+}
+#reset{
+    height: 30px;
+    width:90px;
+    font-size:20px;
+    color:black;
+    font-weight: bold;
+}
+#reset:hover{
+    border-color:red;
+}
+form{
+    display:block;
+    border-style: groove;
+    border-color:cyan;
+    height: 550px;
+    width: 400px;
+    background-color:snow;
+}
+#para{
+   
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+}
+            </style>
+
+    </head>
+    <body bgcolor="whitesmoke">
+        <center>
+        <form>
+            <h1><u>TIC-TAC TOE</u></h1>
+          <div class="lab">
+            <h4 class="player1"><u>PLAYER-1</u> :<b>X</b></h4>
+            <h4 class="player2"><u>PLAYER-2</u> :<b>O</b></h4>
+          </div>
+                
+            <div id="dv">
+            <table class="tab">
+                <tr>
+                    <input type=button onclick="a1()" id="1" value=" "></input>
+                    <input type=button onclick="a2()" id="2" value=" "></input>
+                    <input type=button onclick="a3()" id="3" value=" "></input>
+                </tr><br/>
+                <tr>
+                    <input type=button onclick="a4()" id="4" value=" "></input>
+                    <input type=button onclick="a5()" id="5" value=" "></input>
+                    <input type=button onclick="a6()" id="6" value=" "></input>
+                </tr><br/>
+                <tr>
+                    <input type=button onclick="a7()" id="7" value=" "></input>
+                    <input type=button onclick="a8()" id="8" value=" "></input>
+                    <input type=button onclick="a9()" id="9" value=" "></input>
+                </tr>
+            </table>  
+        </div>
+        <br/>
+       <button id="reset"><a src="a.html">Reset</a></button>
+            <p id="para">Player-1 Turn</p>       
+        </form> 
+
+    </center>
+    </body>
+</html>

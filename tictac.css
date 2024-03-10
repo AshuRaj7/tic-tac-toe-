@@ -1,0 +1,54 @@
+.lab{              
+    display: flex;
+    justify-content: space-between;
+    height: 5px;
+}
+.player1{
+    text-align: left;
+    margin-left: 2px;
+    color: blue;
+}
+.player2{
+    text-align: right;
+    margin-right: 4px;
+    color: red;
+}
+
+#dv{
+    height: 270px;
+    margin-top: 70px;
+}   
+b{
+    font-size: 20px;
+    
+}
+table{
+    border-color: black;
+    border: 10px;
+    height: 150px;
+    width: 150px;
+}
+input{
+    height: 90px;
+    width: 90px;
+    font-size: 40px;
+}
+input:hover{
+
+    background-color: whitesmoke;
+    
+}
+form{
+    display:block;
+    border-style: groove;
+    border-color: black;
+    height: 550px;
+    width: 400px;
+    background-color: aliceblue;
+}
+#para{
+   
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+}
